@@ -28,3 +28,7 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
     - name: Create the package
       run: dotnet pack --configuration Release --no-restore
+        uses: actions/upload-artifact@v1
+        with:
+          name: drop
+          path: ${{ github.workspace }}/bin/Release/
