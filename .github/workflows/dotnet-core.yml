@@ -1,8 +1,5 @@
 name: .NET Core
 
-env:
-  PROJECT_NAME: BlazorMarkdown
-
 on:
   push:
     branches: [ master ]
@@ -29,10 +26,3 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Create the package
-      run: dotnet pack --configuration Release --no-restore
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: drop
-        path: ${{ env.PROJECT_NAME }}/bin/Release/
