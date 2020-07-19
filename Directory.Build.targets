@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="5.3.7" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
