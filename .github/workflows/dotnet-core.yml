@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: drop
-        path: $PROJECT_NAME/bin/Release/
+        path: ${{ env.PROJECT_NAME }}/bin/Release/
