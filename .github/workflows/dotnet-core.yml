@@ -1,5 +1,8 @@
 name: .NET Core
 
+env:
+  PROJECT_NAME: BlazorMarkdown
+
 on:
   push:
     branches: [ master ]
@@ -32,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: drop
-        path: bin/Release/
+        path: $PROJECT_NAME/bin/Release/
