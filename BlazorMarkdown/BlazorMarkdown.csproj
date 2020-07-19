@@ -3,6 +3,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
+
+	<Authors>George Mathieson</Authors>
+	<Company></Company>
+	<Copyright>Copyright 2020 (c) George Mathieson. All rights reserved.</Copyright>
+
+	<Description>A library for using Markdown in Blazor.</Description>
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+	  <!-- NuGet settings -->
+	<PackageId>BlazorMarkdown</PackageId>
+	<PackageTags>Blazor;Components;Markdown;ASP.NET Core;CSharp;Web</PackageTags>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageProjectUrl>https://github.com/georgemathieson/blazor-markdown</PackageProjectUrl>
+	<RepositoryType>git</RepositoryType>
+	<RepositoryUrl>https://github.com/georgemathieson/blazor-markdown</RepositoryUrl>
   </PropertyGroup>
 
 
