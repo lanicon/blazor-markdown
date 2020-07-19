@@ -12,7 +12,7 @@
 	<IncludeSymbols>true</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
-	  <!-- NuGet settings -->
+	<!-- NuGet settings -->
 	<PackageId>BlazorMarkdown</PackageId>
 	<PackageTags>Blazor;Components;Markdown;ASP.NET Core;CSharp;Web</PackageTags>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>

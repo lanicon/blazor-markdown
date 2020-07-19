@@ -22,9 +22,9 @@ namespace BlazorMarkdown
         /// Gets the <see cref="MarkdownPipeline"/> to use.
         /// </summary>
         public virtual MarkdownPipeline Pipeline => new MarkdownPipelineBuilder()
-                .UseEmojiAndSmiley()
-                .UseAdvancedExtensions()
-                .Build();
+            .UseEmojiAndSmiley()
+            .UseAdvancedExtensions()
+            .Build();
 
         /// <inheritdoc/>
         protected override void BuildRenderTree(RenderTreeBuilder builder)
