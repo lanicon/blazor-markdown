@@ -1,0 +1,33 @@
+name: Release
+
+env:
+  PROJECT_NAME: BlazorMarkdown
+  NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_KEY}}
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Fetch all history for all tags and branches
+      run: git fetch --prune --unshallow
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.102
+    - name: Create the package
+      run: dotnet pack --configuration Release
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: drop
+        path: ${{ env.PROJECT_NAME }}/bin/Release/
+    - name: Publish the package to NuGet
+      run: dotnet nuget push ${{ env.PROJECT_NAME }}/bin/Release/*.nupkg
