@@ -1,10 +1,12 @@
+<p style="text-align: center;">
+
 # Blazor Markdown
 
-![.NET Core](https://github.com/georgemathieson/blazor-markdown/workflows/.NET%20Core/badge.svg) 
-
-![Nuget](https://img.shields.io/nuget/v/BlazorMarkdown?style=flat-square)
+![.NET Core](https://github.com/georgemathieson/blazor-markdown/workflows/.NET%20Core/badge.svg) ![Nuget](https://img.shields.io/nuget/v/BlazorMarkdown?style=flat-square) ![Nuget](https://img.shields.io/nuget/dt/BlazorMarkdown?style=flat-square)
 
 A [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) Markdown component that enables you to include Markdown files in your server-side Blazor apps.
+
+</p>
 
 ## Why?
 
@@ -22,6 +24,11 @@ PM> Install-Package BlazorMarkdown
 
 ```
 $ dotnet add package BlazorMarkdown
+```
+
+Add the following to your `_Imports.razor`
+```
+@using BlazorMarkdown
 ```
 
 ## Usage
