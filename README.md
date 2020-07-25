@@ -4,7 +4,13 @@
 
 ![Nuget](https://img.shields.io/nuget/v/BlazorMarkdown?style=flat-square)
 
-A library for using Markdown in [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+A [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) Markdown component that enables you to include Markdown files in your server-side Blazor apps.
+
+## Why?
+
+Static content in Blazor means writing HTML. Yikes! Markdown source files are easier to read, write, and update when compared to HTML. Sounds good eh? 
+
+No longer will  `<pre><code>` content be weirdly indented or heavily escaped. Gone are the days of misusing the `<br>` tag.
 
 ## Get started
 
